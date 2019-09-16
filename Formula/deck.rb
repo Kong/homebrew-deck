@@ -2,15 +2,15 @@
 class Deck < Formula
   desc "Declarative configuration for Kong"
   homepage "https://github.com/hbagdi/deck"
-  version "0.5.1"
+  version "0.5.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/hbagdi/deck/releases/download/v0.5.1/deck_0.5.1_darwin_amd64.tar.gz"
-    sha256 "8a0abb851b5270a1bea19cf4c40e9b1b51c830060ea384ca1ba60e2225464ee5"
+    url "https://github.com/hbagdi/deck/releases/download/v0.5.2/deck_0.5.2_darwin_amd64.tar.gz"
+    sha256 "b515398fe0c9e27cc3b79e645cd18a16ba4a8114d7db84a5ac06b55a678d4d0b"
   elsif OS.linux?
-    url "https://github.com/hbagdi/deck/releases/download/v0.5.1/deck_0.5.1_linux_amd64.tar.gz"
-    sha256 "303bca830fe5ef97df56fdfc1c9dfca6233cbb0da0fff1caa89f4e069027bf97"
+    url "https://github.com/hbagdi/deck/releases/download/v0.5.2/deck_0.5.2_linux_amd64.tar.gz"
+    sha256 "e784a8cf1b90712f2c33fb0c053a42733f34ba556090409184525d3379b3b070"
   end
 
   def install
