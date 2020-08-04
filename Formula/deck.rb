@@ -6,11 +6,11 @@ class Deck < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/hbagdi/deck/releases/download/v1.2.0/deck_1.2.0_darwin_amd64.tar.gz"
+    url "https://github.com/kong/deck/releases/download/v1.2.0/deck_1.2.0_darwin_amd64.tar.gz"
     sha256 "e22ee210d0b25f7d633984b563bc41e11686ad7c6e8431eeccb154e57e79fb86"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/hbagdi/deck/releases/download/v1.2.0/deck_1.2.0_linux_amd64.tar.gz"
+      url "https://github.com/kong/deck/releases/download/v1.2.0/deck_1.2.0_linux_amd64.tar.gz"
       sha256 "62c3033e3779d3b1517871d59e4c2641e08a97b6f75f948dca56783fb0a9e37f"
     end
   end

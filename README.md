@@ -3,6 +3,6 @@
 Homebrew Formula to install decK:
 
 ```shell
-brew tap hbagdi/deck
+brew tap kong/deck
 brew install deck
 ```
