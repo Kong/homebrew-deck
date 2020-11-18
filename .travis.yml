@@ -1,5 +1,7 @@
 # borrowed from https://github.com/goreleaser/homebrew-tap
 language: objective-c
+os: osx
+osx_image: xcode11
 before_install:
   - brew update >/dev/null
 script:
