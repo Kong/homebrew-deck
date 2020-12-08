@@ -6,3 +6,10 @@ Homebrew Formula to install decK:
 brew tap kong/deck
 brew install deck
 ```
+
+If you are migrating from the old `hbagdi/deck` tap, remove it first before adding this tap:
+
+```
+brew uninstall --force deck
+brew untap hbagdi/deck
+```
