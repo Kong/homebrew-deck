@@ -22,6 +22,6 @@ class Deck < Formula
   end
 
   test do
-    system "#{bin}/deck version"
+    system "#{bin}/deck", "version"
   end
 end
