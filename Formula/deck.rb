@@ -5,16 +5,16 @@
 class Deck < Formula
   desc "Declarative configuration for Kong"
   homepage "https://github.com/kong/deck"
-  version "1.5.1"
+  version "1.6.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/Kong/deck/releases/download/v1.5.1/deck_1.5.1_darwin_amd64.tar.gz"
-    sha256 "a49c111fdc7165da9bb101d0a5d3aba743286ec02dbb9b2a62577691c7e87b02"
+    url "https://github.com/Kong/deck/releases/download/v1.6.0/deck_1.6.0_darwin_amd64.tar.gz"
+    sha256 "86485ec94ad01533d2a42495bdf40ee9e2a8f74864d488a2a7fdb1168a74896d"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Kong/deck/releases/download/v1.5.1/deck_1.5.1_linux_amd64.tar.gz"
-    sha256 "16d89007162cd7c21c7bd6e49b7828e89f65429575ed5754a2d44ed7937e9ed7"
+    url "https://github.com/Kong/deck/releases/download/v1.6.0/deck_1.6.0_linux_amd64.tar.gz"
+    sha256 "a0a49a06d794dcce96a449c9aac831b58a2ca2628370d108a7a4bbda0db998e4"
   end
 
   def install
