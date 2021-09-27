@@ -5,20 +5,28 @@
 class Deck < Formula
   desc "Declarative configuration for Kong"
   homepage "https://github.com/kong/deck"
-  version "1.8.1"
+  version "1.8.2"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Kong/deck/releases/download/v1.8.1/deck_1.8.1_darwin_amd64.tar.gz"
-      sha256 "a06c4e510a15d70b0406677a6c62dd51ae43c69049de86dc7a0b26347f6e91ea"
+      url "https://github.com/Kong/deck/releases/download/v1.8.2/deck_1.8.2_darwin_amd64.tar.gz"
+      sha256 "2cea4c913cea16d25c95e49601dc82af2e21f28fd7baaa8c5bb611e274309edf"
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/Kong/deck/releases/download/v1.8.2/deck_1.8.2_darwin_arm64.tar.gz"
+      sha256 "8d8be55f40feb4c4ac8dab46ccf382f2c098c5719162e9ff7daea750e40e73a1"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Kong/deck/releases/download/v1.8.1/deck_1.8.1_linux_amd64.tar.gz"
-      sha256 "30d8ca51d3dcc617b77b4f445ead9c1a1ead1518d6b8aff86980ffd3236c360f"
+      url "https://github.com/Kong/deck/releases/download/v1.8.2/deck_1.8.2_linux_amd64.tar.gz"
+      sha256 "3d63b928ed1b9ff5c1ee753294f0c5045ef22c2237a727fd9feff99fc2208905"
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/Kong/deck/releases/download/v1.8.2/deck_1.8.2_linux_arm64.tar.gz"
+      sha256 "3d3e801bb88df78df434a4d422abcf02040ba4caa1a367925cc3750b88b7a5d1"
     end
   end
 
