@@ -6,7 +6,6 @@ class Deck < Formula
   desc "Declarative configuration for Kong"
   homepage "https://github.com/kong/deck"
   version "1.8.2"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
