@@ -13,6 +13,8 @@ class Deck < Formula
 
     def install
       bin.install "deck"
+      # Install shell completions
+      generate_completions_from_executable(bin/"deck", "completion", base_name: "deck")
     end
   end
 
