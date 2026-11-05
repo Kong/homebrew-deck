@@ -5,11 +5,11 @@
 class Deck < Formula
   desc "Declarative configuration for Kong"
   homepage "https://github.com/kong/deck"
-  version "1.69.0"
+  version "1.70.0"
 
   on_macos do
-    url "https://github.com/Kong/deck/releases/download/v1.69.0/deck_1.69.0_darwin_all.tar.gz"
-    sha256 "91a0bab6a54cecab57ff755011c9b23ea2785df2fb6959a47ee94ba2c8e97156"
+    url "https://github.com/Kong/deck/releases/download/v1.70.0/deck_1.70.0_darwin_all.tar.gz"
+    sha256 "b425046d9347a68d4f79196bac674077a303687ecc2f3ee8c8507386f1c090af"
 
     def install
       bin.install "deck"
@@ -19,8 +19,8 @@ class Deck < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Kong/deck/releases/download/v1.69.0/deck_1.69.0_linux_amd64.tar.gz"
-        sha256 "efee8c84bb6aeb0a27fad67e436b199c74b3098c6ad4e4997f599acb8bf243c6"
+        url "https://github.com/Kong/deck/releases/download/v1.70.0/deck_1.70.0_linux_amd64.tar.gz"
+        sha256 "699efa3af4d00f7ab697a5cbb6d08cf349bf0f3840f9f087a4bf93679988ebf0"
 
         def install
           bin.install "deck"
@@ -29,8 +29,8 @@ class Deck < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Kong/deck/releases/download/v1.69.0/deck_1.69.0_linux_arm64.tar.gz"
-        sha256 "160bc4750a7b7fb69d11c9972126c92d4c52e6b7cb8425c1d374f4aa09a9bb6c"
+        url "https://github.com/Kong/deck/releases/download/v1.70.0/deck_1.70.0_linux_arm64.tar.gz"
+        sha256 "7fbdde80b76b1434e1cfd946b77b8e5f00fcc95222b7ed063464e2d695dc8b27"
 
         def install
           bin.install "deck"
